@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Particles from 'react-tsparticles';
-import Typed from "react-typed";
+import Typewriter from 'typewriter-effect';
 /*
 
           
@@ -96,16 +96,24 @@ function Header() {
 
 
         {/* Adding typed feature */}
+        <Typewriter 
+        className = "typed-text"
+         options={{
+         strings: ["Web design", "Web Development", "Web scraping", "UI design", "pentration testing"],
+        autoStart: true,
+        loop: true,
+         }}
+/>
 
 
-        <Typed className = "typed-text"
+        {/* <Typed className = "typed-text"
         strings = {
             ["Web design", "Web Development", "Web scraping", "UI design", "pentration testing"]
         }
         typeSpeed = { 40 }
         backSpeed = { 5 }
         loop>
-        </Typed> 
+        </Typed>  */}
         <Link className = 'btn-main-offer'
         to = { '/contact' } > contact me </Link> </
         > </div> 
