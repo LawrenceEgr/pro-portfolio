@@ -2,6 +2,7 @@ import React from 'react';
 import Auction from "../project images/Investors2.png"
 import Physic from "../project images/1.png" 
 import Amazon from '../project images/Amazon.png'
+import Twitter from '../project images/Twitter_bot_traffic.jpg'
 // import $ from 'jquery'
 
 
@@ -69,17 +70,17 @@ function Projects() {
 		   </div>
 		 </div>
 	   </div>
-	   {/* <div className="col-sm-6 mb-3">
+	   <div className="col-sm-6 mb-3">
 		 <div className="card" style={{Width : 100 }}>
-		   <img src={Physic} className="card-img-top hover-zoom" alt="Bootstrap Portfolio"/>
+		   <img src={Twitter} className="card-img-top hover-zoom" alt="Bootstrap Portfolio"/>
 		   <div className="card-body">
-			 <h5 className="card-title">Physical Health Goal tracker <span className="badge badge-secondary">Individual project</span></h5>
-			 <p className="card-text">Physic Health is a good tool to keep the records of your goal towards achieving a healthy life.</p>
-			 <a href="https://mimitraining.netlify.app/"  className="btn btn-primary mt-2">View project</a>
-			 <a href="https://github.com/LawrenceEgr/React-physicHealth"  className="btn btn-primary mt-2">View Github <i className='fab fa-github'></i></a>
+			 <h5 className="card-title">Twitter Bot <span className="badge badge-secondary">Individual project</span></h5>
+			 <p className="card-text">This bot enables you to automate your twitter activities. Just run the program and take a rest, you will wake up to find a large number of new followers 👌</p>
+			 {/* <a href="https://mimitraining.netlify.app/"  className="btn btn-primary mt-2">View project</a> */}
+			 <a href="https://github.com/LawrenceEgr/Twitter_Login_Bot"  className="btn btn-primary mt-2">View Github <i className='fab fa-github'></i></a>
 		   </div>
 		 </div>
-	   </div> */}
+	   </div>
 	 </div>
 
 	 
