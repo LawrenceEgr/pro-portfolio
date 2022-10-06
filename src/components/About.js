@@ -3,13 +3,15 @@ import me from '../me.jpg'
 import Interests from '../about images/Interests.png'
 import { Link } from 'react-router-dom'
 import {useNavigate} from 'react-router-dom'
+import Gdsc from '../about images/GDSC.jpg'
+import Alfred from '../about images/Alfred.jpg'
 
 function About() {
   const history = useNavigate();
   
   return (
     <div>
-    <div className="row">
+    <div className="row" style={{Color : 'pink' }}>
       <div className="col-sm-8" id="about">
         
          <h1>Hello !<br></br> I'm <span className='span'>LAWRENCE LANGAT</span> <br></br> <b>I'm a frontend web developer</b> and a <b>Mechatronic Engineer </b> </h1>
@@ -34,10 +36,10 @@ function About() {
     <div className="row row-cols-1 row-cols-md-3 g-4">
   <div className="col">
     <div className="card h-100">
-      <img src="..." className="card-img-top" alt="..."/>
+      <img src={Alfred} className=" img-thumbnail" alt="..."/>
       <div className="card-body">
-        <h5 className="card-title">APPEARANCES</h5>
-        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 className="card-title">Mentions</h5>
+        <p className="card-text">"Lawrence is one of the best front-end web developers I have ever worked with." <p> <i> ~ Alfred Githinji</i> </p> </p>
       </div>
       <div className="card-footer">
         <small className="text-muted">Last updated 3 mins ago</small>
@@ -46,7 +48,7 @@ function About() {
   </div>
   <div className="col">
     <div className="card h-100">
-      <img src={Interests} className="card-img-top" alt="..."/>
+      <img src={Interests} className="" alt="..."/>
       <div className="card-body">
         <h5 className="card-title">INTERESTS</h5>
         <p className="card-text">These are my main areas of interest among others .</p>
@@ -58,10 +60,12 @@ function About() {
   </div>
   <div className="col">
     <div className="card h-100">
-      <img src="..." className="card-img-top" alt="..."/>
+      <img src={Gdsc}   className="card-img-top"   alt="..."></img>
+      
       <div className="card-body">
         <h5 className="card-title">CONTRIBUTIONS</h5>
-        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p className="card-text">I am member of this GDSC organization. </p>
+        <button ><a href="https://github.com/Dekut-GDSC-Web">Go to Organization </a> </button>
       </div>
       <div className="card-footer">
         <small className="text-muted">Last updated 3 mins ago</small>
