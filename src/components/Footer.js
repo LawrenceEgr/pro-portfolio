@@ -15,7 +15,7 @@ export default function App() {
           <a href='www.facebook.com/Larry Lang' className='me-4 text-reset'>
             <i className='fab fa-facebook-f'></i>
           </a>
-          <a href='https://twitter.com/EngineerLawren5?s=09' className='me-4 text-reset'>
+          <a href='https://twitter.com/webgeek254' className='me-4 text-reset'>
             <i className='fab fa-twitter'></i>
           </a>
          
@@ -48,7 +48,8 @@ export default function App() {
               <p>Bootstrap</p>
               <p>React</p>
               <p>Javascript</p>
-              <p>Sass</p>
+              <p>Css</p>
+              <p>Python</p>
             </div>
 
             <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mb-4'>
@@ -61,6 +62,11 @@ export default function App() {
               <p>
                 <Link to='about' className='text-reset'>
                  About
+                </Link>
+              </p>
+              <p>
+                <Link to='services' className='text-reset'>
+                  Services
                 </Link>
               </p>
               <p>

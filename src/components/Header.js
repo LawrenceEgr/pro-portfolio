@@ -1,122 +1,58 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Particles from 'react-tsparticles';
-import Typewriter from 'typewriter-effect';
-/*
+// import { Link } from 'react-router-dom';
 
-          
- */
+import Typewriter from 'typewriter-effect';
+import Bootstrap from '../logos/Bootstrap.jpg';
+import Css from '../logos/css.png';
+import Html from '../logos/Html.jpg';
+import Javascript from '../logos/javascript.png';
+import ReactJS from '../logos/react.jpg';
+import Python from '../logos/python.png'
 function Header() {
     return ( 
         <div className = 'header-wraper' >
-        <div className = 'main-info' >
-        <h1> do you want a cool mobile responsive websites ?
-            
-            
-        Great then you are in the right place </h1> 
-        <>
-        <Particles id = "tsparticles"
-        className = "tsparticles-canvas"
-        options = {
-            {
+            <div className = 'main-info' >
+           
+                <p>Do you want any of these services?you are in the right place</p>
+                {/* Adding typed feature */}
+                <Typewriter 
+                    className = "typedtext"
+                    options={{
+                    strings: ["Web design", "Web Development", "Figma design", "UI design", "Landing Pages"],
+                    autoStart: true,
+                    loop: true,
+                    }}
+                />
 
-                fpsLimit: 120,
-                interactivity: {
-                    events: {
-                        onClick: {
-                            enable: true,
-                            mode: "push",
-                        },
-                        onHover: {
-                            enable: true,
-                            mode: "repulse",
-                        },
-                        resize: true,
-                    },
-                    modes: {
-                        bubble: {
-                            distance: 400,
-                            duration: 2,
-                            opacity: 0.8,
-                            size: 40,
-                        },
-                        push: {
-                            quantity: 4,
-                        },
-                        repulse: {
-                            distance: 20,
-                            duration: 0.4,
-                        },
-                    },
-                },
-                particles: {
-                    color: {
-                        value: "#5dade2",
-                    },
-                    links: {
-                        color: "#5dade2",
-                        distance: 150,
-                        enable: true,
-                        opacity: 0.5,
-                        width: 1,
-                    },
-                    collisions: {
-                        enable: true,
-                    },
-                    move: {
-                        direction: "none",
-                        enable: true,
-                        outMode: "bounce",
-                        random: false,
-                        speed: 1.2,
-                        straight: false,
-                    },
-                    number: {
-                        density: {
-                            enable: true,
-                            area: 800,
-                        },
-                        value: 80,
-                    },
-                    opacity: {
-                        value: 0.5,
-                    },
-                    shape: {
-                        type: "polygon",
-                    },
-                    size: {
-                        random: true,
-                        value: 10,
-                    },
-                },
-                detectRetina: true,
-            }
-        }
-        />
-
-
-        {/* Adding typed feature */}
-        <Typewriter 
-        className = "typed-text"
-         options={{
-         strings: ["Web design", "Web Development", "Web scraping", "UI design", "pentration testing"],
-        autoStart: true,
-        loop: true,
-         }}
-/>
-
-
-        {/* <Typed className = "typed-text"
-        strings = {
-            ["Web design", "Web Development", "Web scraping", "UI design", "pentration testing"]
-        }
-        typeSpeed = { 40 }
-        backSpeed = { 5 }
-        loop>
-        </Typed>  */}
-        <Link className = 'btn-main-offer'
-        to = { '/contact' } > contact me </Link> </
-        > </div> 
+            </div> 
+            <div className='skills'>
+                <div className='skill'>
+                   <img className='skill-icon' src={ReactJS} alt="React"/>
+                   <p className='skill-name' >ReactJS</p> 
+                </div>
+                <div className='skill'>
+                   <img className='skill-icon' src={Javascript} alt="Javascript"/>
+                   <p className='skill-name' >Javascript</p> 
+                </div>
+                <div className='skill'>
+                   <img className='skill-icon' src={Bootstrap} alt="Bootstrap"/>
+                   <p className='skill-name' >Bootstrap</p> 
+                </div>
+                <div className='skill'>
+                   <img className='skill-icon' src={Css} alt="Css"/>
+                   <p className='skill-name' >Css</p> 
+                </div>
+                <div className='skill'>
+                   <img className='skill-icon' src={Html} alt="Html"/>
+                   <p className='skill-name' >HTML</p> 
+                </div>
+                <div className='skill'>
+                   <img className='skill-icon' src={Python} alt="python"/>
+                   <p className='skill-name' >Python</p> 
+                </div>
+                
+              
+            </div>
         </div >
     )
     
