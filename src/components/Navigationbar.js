@@ -55,7 +55,8 @@ function Navigationbar(){
                 <Nav.Link onClick={handleClickScrollToServices} href="/">Services</Nav.Link>
                 <Nav.Link onClick={handleClickScrollToProjects} href="/">Projects</Nav.Link>
 
-                <Nav.Link onClick={handleClickScrollToContact} href="/">Contact</Nav.Link>
+                <Nav.Link onClick={handleClickScrollToContact} href="/contacts">Contact</Nav.Link>
+                <Link onClick={handleClickScrollToContact} to="/">Contact</Link>
               </Nav> 
             </Navbar.Collapse> 
         </Container>      

@@ -4,17 +4,17 @@ import All from './All';
 import About from './About';
 import Contact from './Contact';
 import { Outlet } from 'react-router-dom';
-
+import Navigationbar from './Navigationbar';
 function Home() {
   return (
     <div>
-      <div className='sections'><h1>About <span>Me</span> </h1></div>
+      <div className='sections'id='about' ><h1>About <span>Me</span> </h1></div>
       <About/>
-      <div className='sections'><h1>Services 🖥️</h1></div>
+      <div className='sections' id='services'><h1>Services 🖥️</h1></div>
       <Header/>
-      <div className='sections'><h1>Projects</h1></div>
+      <div className='sections' id='projects'><h1>Projects</h1></div>
       <All/>
-      <div className='sections'><h1>Contact <span>Me</span></h1></div>
+      <div className='sections' id='contact'><h1>Contact <span>Me</span></h1></div>
       <Contact/>
       
       <Outlet/>
