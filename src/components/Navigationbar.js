@@ -2,7 +2,7 @@ import React from 'react' ;
 // import {Link}    from 'react-router-dom';
 import logo from "../profile.png" ;
 import { Navbar, Nav, Container, NavbarBrand } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 function Navigationbar(){
     const handleClickScrollToHome = () => {
     const element = document.getElementById('home');
@@ -49,14 +49,12 @@ function Navigationbar(){
             </NavbarBrand>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' bg='dark' variant='dark'/>  
             <Navbar.Collapse  id="responsive-navbar-nav">
-              <Nav bg='dark'>
-                <Nav.Link onClick={handleClickScrollToHome} aria-current="page" href="/">Home</Nav.Link>
-                <Nav.Link onClick={handleClickScrollToAbout} href="/">About</Nav.Link>
-                <Nav.Link onClick={handleClickScrollToServices} href="/">Services</Nav.Link>
-                <Nav.Link onClick={handleClickScrollToProjects} href="/">Projects</Nav.Link>
-
-                <Nav.Link onClick={handleClickScrollToContact} href="/contacts">Contact</Nav.Link>
-                <Link onClick={handleClickScrollToContact} to="/">Contact</Link>
+              <Nav bg='dark' className='navbar'>
+                <Link className='navbar-links' onClick={handleClickScrollToHome} aria-current="page" to="/">Home</Link>
+                <Link className='navbar-links' onClick={handleClickScrollToAbout} to="/">About</Link>
+                <Link className='navbar-links' onClick={handleClickScrollToServices} to="/">Services</Link>
+                <Link className='navbar-links' onClick={handleClickScrollToProjects} to="/">Projects</Link>
+                <Link className='navbar-links' onClick={handleClickScrollToContact} to="/">Contact</Link>
               </Nav> 
             </Navbar.Collapse> 
         </Container>      

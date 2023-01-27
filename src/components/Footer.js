@@ -4,6 +4,41 @@ import { Link } from 'react-router-dom';
 import { MDBFooter } from 'mdb-react-ui-kit';
 
 export default function App() {
+  const handleClickScrollToHome = () => {
+    const element = document.getElementById('home');
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+    const handleClickScrollToProjects = () => {
+    const element = document.getElementById('projects');
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+    const handleClickScrollToAbout = () => {
+    const element = document.getElementById('about');
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+    const handleClickScrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+    const handleClickScrollToServices = () => {
+    const element = document.getElementById('services');
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
@@ -54,31 +89,13 @@ export default function App() {
 
             <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Navigate</h6>
-              <p>
-                <Link to='/' className='text-reset'>
-                  Home
-                </Link>
-              </p>
-              <p>
-                <Link to='about' className='text-reset'>
-                 About
-                </Link>
-              </p>
-              <p>
-                <Link to='services' className='text-reset'>
-                  Services
-                </Link>
-              </p>
-              <p>
-                <Link to='projects' className='text-reset'>
-                  Projects
-                </Link>
-              </p>
-              <p>
-                <Link to='contact' className='text-reset'>
-                 Contact
-                </Link>
-              </p>
+                
+                <p><Link className='text-reset' onClick={handleClickScrollToHome} aria-current="page" to="/">Home</Link></p>
+                <p><Link className='text-reset' onClick={handleClickScrollToAbout} to="/">About</Link></p>
+                <p><Link className='text-reset' onClick={handleClickScrollToServices} to="/">Services</Link></p>
+                <p><Link className='text-reset' onClick={handleClickScrollToProjects} to="/">Projects</Link></p>
+                <p><Link className='text-reset' onClick={handleClickScrollToContact} to="/">Contact</Link></p>
+              
             </div>
 
             <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4'>

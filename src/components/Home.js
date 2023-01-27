@@ -7,7 +7,7 @@ import { Outlet } from 'react-router-dom';
 import Navigationbar from './Navigationbar';
 function Home() {
   return (
-    <div>
+    <div id='home'>
       <div className='sections'id='about' ><h1>About <span>Me</span> </h1></div>
       <About/>
       <div className='sections' id='services'><h1>Services 🖥️</h1></div>
